@@ -2,6 +2,7 @@
 //Where is the led connected?
 //Port: A
 //Pin: 5
+#include "lib/main.h"
 
 #define PERIPH_BASE                 (0x40000000UL)
 #define AHB1PERIPH_OFFSET           (0x00020000UL)
@@ -23,6 +24,9 @@
 
 
 #define PIN5                        (1U << 5)
+
+
+
 #define LED_PIN                     (PIN5)
 int main() {
     while(1){
